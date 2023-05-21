@@ -1,0 +1,677 @@
+/* Universal Selector:-
+The universal selector (*) selects all HTML elements on the page.*/
+
+
+*{
+    font-family: 'Times New Roman';
+}
+
+/* The CSS class Selector
+The class selector selects HTML elements with a specific class attribute */
+
+.container{
+    position: relative;
+}
+
+/* Selection is used to change the color of selection*/
+
+*::selection{
+    background-color: rgb(99, 234, 71);
+}
+
+
+.navbar{
+    flex: 1;
+    text-align: center;
+   
+}
+/*Descendant Selector
+ The descendant selector matches all elements that are descendants of a specified element */
+
+.navbar input{
+    border-style: dashed;
+    border-radius: 8px;
+    background:transparent url("/Images/690150.png") no-repeat left;
+    background-size: 20px 22px;
+    display: block;
+    padding: 9px 4px 9px 26px;
+    height: 14px;
+    margin-top: -5px;
+}
+/* The CSS Grouping Selector
+The grouping selector selects all the HTML elements with the same style definitions.*/
+
+.navbar a ,input ,img,button{
+    padding: 6px 20px;
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top:35px ;
+    margin-left: 100px;
+
+}
+
+/*Pseudo-classes:- hover
+ mouse over link */
+
+a:hover{
+    color: #0096FF;
+}
+
+/*Header*/
+
+.header{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/*Button Style:- changing styles like background color,font style and color */
+
+.btn {
+    cursor: pointer;
+    color: white;
+    border: 1px solid;
+    text-align: center;
+    font-weight: bold;
+    background-color:  #0096FF;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-top: -5px;
+}
+
+
+/*Pseudo-classes:- active
+ onclick change color of the button*/
+
+.btn:active{
+    background-color:blueviolet;
+}
+
+/*Pseudo-classes:- focus
+ After click change color of the button*/
+
+.navbar .btn:focus{
+    background-color: rgb(15, 15, 219);
+}
+
+.notification{
+    position: relative;
+    margin-top: -18px;
+    border-radius: 50px;
+}
+
+.homeimg{
+    margin-left: 420px;
+    position: absolute;
+}
+
+.inner{
+    position: relative;
+    left: 30px;
+    margin-left: -150px;
+    padding-top: 50px;
+    border-radius: 12px;
+    margin-top: -15px;
+
+}
+.inner1{
+    position: relative;
+    left: 30px;
+    margin-top: -15px;
+    margin-left: 0px;
+    padding-top: 50px;
+    border-radius: 12px;
+
+}
+
+.text{
+    position: absolute;
+    font-size: 13px;
+    left: 170px;
+    top: 135px;
+    font-family: sans-serif;
+}
+
+
+.text h1{
+    font-size: 55px;
+}
+.text2{
+    font-size: 13px;
+    margin-left: 70px;
+    font-family: sans-serif;
+    word-spacing: 75PX;
+}
+
+span{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Selects only <span> elements with class="lightblue" */
+
+span.lightblue{
+   font-size: 30px;
+    color: #0096FF;
+}
+
+span.darkblue{
+    font-size: 30px;
+    color: rgb(59, 42, 145);
+}
+
+/* Adjacent Sibling Selector (+)
+The adjacent sibling selector is used to select an element that is directly after another specific element.
+Sibling elements must have the same parent element, and "adjacent" means "immediately following".*/
+
+.lightblue + .darkblue{
+    
+        color: #2f59b3;
+     
+}
+
+/* Select Button from class text2 and class btn only*/
+
+.text2 a{
+    background-color:whitesmoke;
+    color: rgb(2, 2, 2);
+    border-radius: 25px;
+    border: 0px;
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 9px;
+
+}
+
+.text2 a:hover{
+    background-color:#0096FF;
+    color: whitesmoke;
+}
+
+/* Form Style */
+
+.form{
+    position: absolute;
+    font-size: 15px;
+    left: 60px;
+    top: 575px;
+    color: gray;
+    word-spacing: 50px;
+}
+
+.form p{
+    word-spacing: 55px;
+    margin-left: 42px;
+    text-align: justify;
+}
+
+
+.form input {
+    border: 0px;
+    width: 165px;
+}
+
+/*pseudo element*/
+
+form ::placeholder{
+    color: #0096FF;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.box{
+    font-size: 16px;
+    color: #0096FF;
+    font-weight: bold;
+    border: 0px;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.title2 {
+    position: relative;
+    text-align: center;
+    /*margin-top: 160px;*/
+    padding-left: 80px;
+}
+
+.title2 p{
+    color: gray;
+}
+
+.gallery{
+    width: 95vw;
+    height: 300px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Child Selector
+The child selector selects all elements that are the children of a specified element */
+
+.gallery > article {
+    width: 310px;
+    height: 400px;
+    overflow: scroll;
+}
+
+.gallery, .gallery > article{
+    
+    overflow: scroll;
+
+}
+
+figcaption{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: grey;
+    align-content: center;
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 135px;
+    align-items: center;
+}
+
+.btn2 {
+    cursor: pointer;
+    color:whitesmoke;
+    border: 1px solid;
+    text-align: center;
+    background-color:   #0e6abb;
+    border-radius: 9px;
+    font-size: 15px;
+    margin-left: 600px;
+    width: 330px;
+    height: 55px;
+}
+.featured {
+    width: 95vw;
+    height: 600px;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: sans-serif;
+    
+    
+}
+/* Flex Box Implementation */
+
+.featured > article {
+    width: 450px;
+    height: 500px;
+    overflow: scroll;
+}
+.featured, .featured > article {
+   
+    overflow: scroll;
+}
+.rectangle{
+    position: absolute;
+}
+.recimg{
+    position: absolute;
+}
+.maskimg{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.rectangle1{
+    position: absolute;
+}
+.mask1{
+   position: absolute;
+   
+   padding-bottom: 100px;
+}
+
+/* Hover over image */
+
+.mask1 :hover{
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 5px -5px gray;
+    border:0.5px solid gray;
+
+}
+
+.mask{
+    position: absolute;
+    margin-left: 53px;
+    margin-top: 50px;
+}
+
+.greenbtn{
+    position: absolute;
+    background-color: rgb(137, 197, 68);
+    border: 0px;
+    color: white;
+    margin-left: 320px;
+    margin-top: 30px;
+    border-radius: 4px;
+    height: 35px;
+    width: 95PX;
+    font-size: 10px;
+}
+.tbtn{
+    position: absolute;
+    background: transparent;
+    border: 0px;
+    color: white;
+    margin-left: 60px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: rgba(114, 107, 107, 0.5);
+    font-weight: bold;
+    height: 35px;
+
+}
+.faceimg{
+    position: absolute;
+    margin-left: 350px;
+    border-radius: 50px;
+    margin-top: -51px;
+   border: 2px solid white;
+   box-shadow: 10px 10px 10px rgba(25, 24, 24, 0.2);
+   padding: 0px;
+}
+.location{
+    margin-top: 225px;
+    position:relative;
+    width: 200px;
+    margin-left: 70px;
+    color: gray;
+    font-size: small;
+    font-family: sans-serif;
+    
+}
+.locationimg{
+    margin-top: 215px;
+    margin-left: 25px;
+    position: absolute;
+}
+.price{
+    margin-left: 55px;
+    position: absolute;
+    margin-top: 10px;
+    color: rgb(18, 84, 249);
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+
+/* General Sibling Selector:-
+The following example selects all <p> elements that are next siblings of <div> elements: */
+
+.rectangle1 .location ~ .areaname p{
+    color: gray;
+    font-family: sans-serif;
+}
+
+
+.areaname{
+    position: absolute;
+    margin-left: 55px;
+    width: 400px;
+    margin-top: 30px;
+    
+}
+.areaname p{
+   
+   
+    font-size: 12px;
+}
+
+.tinyimages{
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 45px;
+    padding: 0px;
+    background-color: whitesmoke;
+    width: 280px;
+    height: 60px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px rgba(221, 215, 215, 0.2);
+}
+
+.parameters{
+    position: absolute;
+    margin-top: 140px;
+    word-spacing: 14px;
+    margin-left: 65px;
+    color: rgb(18, 84, 249);
+    font-weight: bold;
+} 
+
+.labels{
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 62px;
+    font-size: x-small;
+    color: gray;
+    word-spacing: 40px;
+}
+
+.threeimages{
+    margin-left: 47px;
+    margin-top: -47px;
+
+
+}
+
+ .rectangle1 .img1{
+    margin-left: 260px;
+    margin-top: 190px;
+   
+    position: absolute;
+}
+
+.rectangle1 .img2{
+    margin-left: 295px;
+    margin-top: 194px;
+   
+    position: absolute;
+}
+
+.rectangle1 .img3{
+    margin-left: 329px;
+    margin-top: 192px;
+   
+    position: absolute;
+}
+
+.threedots{
+    margin-left: 670px;
+    margin-top: -50px;
+}
+ 
+ .ApartmaentPlans{
+    position: relative;
+    background-color: rgba(213, 206, 206, 0);
+}
+.background{
+    position: absolute;
+    align-self: center;
+}
+
+.plans ul{
+    position: absolute;
+    list-style: none;
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top:35px ;
+    margin-left: 100px;
+
+}
+
+.plans a {
+    padding: 6px 43px;
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+
+/* Psueodo class*/
+
+.plans a:hover{
+    color: #0096FF;
+    text-decoration: underline;
+
+}
+
+.whitebg{
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 40px;
+}
+
+.planimage{
+    position:absolute;
+    margin-top: 100px;
+    margin-left: 160px;
+    display: flex;
+}
+
+.planimage p{
+    background-color:  #0e6abb;
+    color: white;
+    width: 422px;
+    height: fit-content;
+    margin-left: 20px;
+    align-items: center;
+    text-align: justify;
+    padding: 50px;
+    margin-top: 45px;
+    border-bottom-left-radius: 10px 10px;
+    border-top-left-radius: 10px 10px;
+    font-family: sans-serif;
+    font-size: 13px;
+    height: 360px;
+}
+
+.planimage span{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.buy{
+    margin-top: 800px;
+    margin-left: 100px;
+    display: flex;
+    position: relative;
+}
+.buy h1{
+    font-size: 50px;
+    margin-top: 100px;
+    
+}
+.buy span{
+    color: #0096FF;
+}
+
+.union{
+    position: absolute;
+}
+
+.bedroom{
+    margin-left: 30px;
+    position: absolute;
+}
+.delux{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 330px;
+}
+
+.play{
+    margin-top: 50px;
+    margin-left: 590px;
+    position: absolute;
+}
+
+.seeapartment{
+    position: absolute;
+
+}
+
+.btn3 {
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    border: 1px solid;
+    text-align: center;
+    background-color:  #0e6abb;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-left: 120px;
+    width: 240px;
+    height: 65px;
+}
+
+/* Footer:-The footer tag contains the details about the company 
+             and methods to connect to the company via variuos social media platforms */
+
+footer{
+    background-image: url(/Images/Path\ 2954.png);
+    margin-top: 245px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 170px;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+}
+
+
+.footer ul{
+    list-style: none;
+    
+}
+
+.container1{
+    position: absolute;
+    margin-top: 350px;
+    margin-right: 20px;
+}
+
+.copyright{
+    position:absolute;
+    margin-top: 350px;
+    margin-right: 830px;
+}
+
+  
+
+
