@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    HEAD:-The <head> element contains meta information about the HTML page
+             --->    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+    TITLE:-The <title> element specifies a title for the HTML page 
+        (which is shown in the browser's title bar or in the page's tab)
+             --->    
+    <title>Apartment</title>
+
+    <!--CSS link ---> 
+
+    <link rel="stylesheet" href="Styles/main.css">
+</head>
+<main>
+<!--
+    BODY- The <body> element defines the document's body, and is a container 
+        for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+             --->    
+<body>
+    <div class="container">
+    <!--Header---> 
+    <header class="header">
+        <img src="Images/Group 9739.png" alt="logo"></a>
+
+        <!-- Navbar -->
+
+        <div class="navbar">
+        <!-- Unordered List -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><input type="text" placeholder="Saved Search..." name="search"></li>
+            <li><img src="Images/Notification.png" alt="Notification" height="55" width="55" class="notification"></li>
+            <li><button type="button" name="button" class="btn">Login</button></li>
+          </ul>
+        </div>
+    </header>
+<!--
+    Section 1-Home page
+             --->    
+        <section>
+                <!-- Div Element -->
+                <div>
+                    <!-- IMG-The HTML <img> tag is used to embed an image in a web page. -->
+                    <img src="Images/pierre-chatel-innocenti-gxyeia7Syuk-unsplash.png" alt="homepage" height="650" width="950" class="homeimg"> 
+                    <div class="inner"><img src="/Images/Rectangle 102.png" alt="Rectangle" height="350" width="670"></div>
+                    <div class="text">
+                    <span class="lightblue"><h1>Let's find<br></h1></span><span class="darkblue"><h1>yours Dream..</h1></span> 
+                        <p><b>Building Award Winning properties <br> across London UK and All world</b></p><br><br>
+                      
+                    </div>  
+                    <div class="text2">
+                   
+                    <a href="#">Buy</a>
+                    <a href="#">Sell</a>
+                    <a href="#">Rent</a>
+                    </div>
+
+                    <div>
+                        <img src="/Images/Rectangle 114.png" alt="Rectangle" height="120" width="1100" class="inner1"> 
+                    </div>
+                    <!-- FORM:-The HTML <form> element is used to create an HTML form for user input -->
+                    <form onclick="" class="form">  
+                            <p>
+                            <!-- The <label> element defines a label for several form elements. --> 
+                            <label for="name" id="name">City/Street</label>    
+                            <label for="Appartmentype">&nbsp;&nbsp;AppartmentType</label>
+                            <label for="price">&nbsp;PriceRange</label><br></p>
+                           <!-- The <input> element can be displayed in several ways, depending on the type attribute.-->
+                            <input id="name"  name="name" type="text"  placeholder="Enter City"  pattern="[A-Za-z]+" required></input>
+                            <!-- The <select> element defines a drop-down list: -->
+                            <select id="Appartmentype" name="Appartmentype" class="box">
+                                <option value="deluxportion">Delux Portion</option>
+                                <option value="double height">Double height</option>
+                                <option value="penthouse">Penthouse</option>
+                                <option value="thestudio">The Studio</option>
+                            </select>
+                            <select id="prices" name="price" class="box">
+                                <option value="range">Min price-Max price</option>
+                                <option value="low">20000-50000</option>
+                                <option value="moderate">50000-100000</option>
+                                <option value="high">100000-200000</option>
+                                <option value="luxury">100000-400000</option>
+                            </select>
+                              <!--  <input id="price" name="price" type="number" min="1200" max="400000" placeholder="Min price-Max price"></input> --->
+                             <a href="#">+AdvanceSearch</a>
+                             <!-- <input type="submit"> defines a button for submitting form data to a form-handler  -->
+                                 <button type="submit" name="button" class="btn">Submit</button>
+                    </form>
+        </section>
+        <br><br><br><br><br> <br>
+ <!--
+       Section 2-Type of Apartment
+             --->
+
+        <section>
+            <div class="title2">
+            <!--H1:-Heading-->
+            <h1><span class="darkblue"> Hi, What do you want to your</span></h1>
+            <h1><span class="lightblue">Dream Apartment</span></h1>
+            <p>Select the Appartment Type to begin</p>
+            </div>
+            <div class="gallery">
+                <!-- Article used for flexbox -->
+                <!-- CHECKBOX:-Checkboxes let a user select ZERO or MORE options of a limited number of choices -->
+                <article>
+                    <img src="Images/Rectangle 102.png" alt="Rectangle" height="300" width="300" class="rectangle">
+                    <img src="/Images/DeluxPortion.png" alt="Penthouse" width="230" height="170" class="mask">
+                    <!-- The <figcaption> tag defines a caption for a <figure> element. -->
+                    <figcaption>Delux Portion<input type="checkbox" name="Penthouse" value="Penthouse" class="checkmark"></figcaption>
+
+                </article>
+                <article>
+                    <img src="Images/Rectangle 102.png" alt="Rectangle" height="300" width="300" class="rectangle">
+                    <img src="/Images/DoubleHeight.png" alt="Studio" width="230" height="170" class="mask">
+                    <figcaption>Double Height<input type="checkbox" name="Penthouse" value="Penthouse" class="checkmark"></figcaption>
+
+                </article>
+                <article>
+                    <img src="Images/Rectangle 102.png" alt="Rectangle" height="300" width="300" class="rectangle">
+                    <img src="/Images/DeluxPortion.png" alt="Double" width="230" height="170" class="mask">
+                    <figcaption>Penthouse<input type="checkbox" name="Penthouse" value="Penthouse" class="checkmark"></figcaption>
+
+                </article>
+                <article>
+                    <img src="Images/Rectangle 102.png" alt="Rectangle" height="300" width="300" class="rectangle">
+                    <img src="/Images/TheStudio.png" alt="Delux"width="230" height="170" class="mask">
+                    <figcaption>The Studio<input type="checkbox" name="Penthouse" value="Penthouse" class="checkmark"></figcaption>
+                </article>
+            </div>
+            <!-- <br> Used for line break-->
+            <br>
+            <button type="button" name="button" class="btn2">Continue</button>
+        </section>
+        <br><br><br><br><br> 
+ <!--
+       Section 3-Featured Apartment
+             --->
+        <section>
+
+            <div class="title2">
+            <h1><span class="darkblue"> Featured Apartment</span></h1>
+            <p>The Most Frequently Searched And Most Popular Apartment Of The Application Will Be In The List</p>
+            </div>
+            <div class="featured">
+ <!--
+       Section 3-Article 1 Knights Bridge Location
+             --->
+            <article>
+                <div class="rectangle1">
+                    <img src="Images/Rectangle 114.png" alt="Rectangle" height="480" width="400" class="recimg">
+                    <div class="mask1"><img src="/Images/Mask Group 4.png" alt="mask" height="200" width="380" class="maskimg"></div>
+                    <button type="button" name="button" class="greenbtn">FOR RENT</button>
+                    <button type="button" name="button" class="tbtn">1.2 km away</button>
+                   
+                    <img src="/Images/location.png" class="locationimg">
+                    <div class="location">Knightsbridge</div>
+                    <div class="price">$2,500</div>
+                    <div class="areaname"><h3>Apartment London</h3>
+                    <!-- The <p> tag defines a paragraph. -->
+                    <p>Beautuful Huge 1 Family House In Heart Of Westbury <br>Newly Renovated 
+                        With New Furniture </p> </div>
+                        <img src="/Images/face1.jpg" height="40px" width="40px" class="faceimg">
+                    <div class="tinyimages">
+                           <img src="/Images/icons8-bedroom-50.png" alt="bedroom"  height="30px" width="30px">
+                            <img src="/Images/bathtub1.png" alt="Bathroom" height="30px" width="30px">
+                            <img src="Images/icons8-square-border-50.png" alt="sqrft" height="30px" width="30px">
+                    </div>
+                    <div class="parameters">
+                        <p>2   &nbsp;&nbsp; 2  &nbsp;&nbsp; 1776</p>
+                        
+                    </div>
+
+                    <div class="labels">
+                        <span>Bedrooms Bathrooms SquareFt </span>
+                    </div>
+                    <div class="threeimages">
+                        <a  href="#"><img src="/Images/4way.png" alt="4way" class="img1"></a>
+                        <a  href="#"><img src="/Images/heart.png" alt="heart" class="img2"></a>
+                        <a  href="#"><img src="/Images/plus.jpeg" alt="plus" class="img3"> </a>   
+                    </div>
+                     
+                </div>
+            </article>
+ <!--
+       Section 3-Article 2 Belmont Gardens Location 
+             --->
+            <article>
+                <div class="rectangle1">
+                    <img src="Images/Rectangle 114.png" alt="Rectangle" height="480" width="400" class="recimg">
+                    <div class="mask1"><img src="/Images/Mask Group -1.png" alt="mask" height="200" width="380" class="maskimg"></div>
+                    <button type="button" name="button" class="greenbtn">FOR SELL</button>
+                    <button type="button" name="button" class="tbtn">20 km away</button>
+                   
+                    <img src="/Images/location.png" class="locationimg"><div class="location">Belmont Gardens,Chicago</div>
+                    <div class="price">$30000</div>
+
+                    <div class="areaname"><h3>Studio Apartment</h3>
+                    <p>Beautuful Huge 1 Family House In Heart Of Westbury <br>Newly Renovated 
+                        With New Furniture </p> </div>
+                    
+                        <img src="/Images/face.jpeg" height="40px" width="40px" class="faceimg">
+                    <div class="tinyimages">
+                           <img src="/Images/icons8-bedroom-50.png" alt="bedroom"  height="30px" width="30px">
+                           <img src="/Images/bathtub1.png" alt="Bathroom" height="30px" width="30px">
+                           <img src="Images/icons8-square-border-50.png" alt="sqrft" height="30px" width="30px">
+                    </div>
+                    <!--nbsp; is used for adding space-->
+                    <div class="parameters">
+                        <p>3  &nbsp;&nbsp; 2  &nbsp;&nbsp; 2500</p>
+                        
+                    </div>
+                    <!-- The <label> element defines a label for several form elements. --> 
+                    <div class="labels">
+                        <span>Bedrooms Bathrooms SquareFt </span>
+                    </div>
+                    <div class="threeimages">
+                        <a  href="#"><img src="/Images/4way.png" alt="4way" class="img1"></a>
+                        <a  href="#"><img src="/Images/heart.png" alt="heart" class="img2"></a>
+                        <a  href="#"><img src="/Images/plus.jpeg" alt="plus" class="img3"> </a>   
+                    </div>
+                     
+                </div>
+            </article>
+<!--
+       Section 3-Article 3 Timber Yard location
+             --->
+            <article>
+                <div class="rectangle1">
+                    <img src="Images/Rectangle 114.png" alt="Rectangle" height="480" width="400" class="recimg">
+                    <div class="mask1"><img src="/Images/Mask Group -2.png" alt="mask" height="200" width="380" class="maskimg"></div>
+                    <button type="button" name="button" class="greenbtn">FOR RENT</button>
+                    <button type="button" name="button" class="tbtn">5.6 km away</button>
+                    
+                    <img src="/Images/location.png" class="locationimg"><div class="location">Timber Yard, Birmingham City</div>
+                    <div class="price">$379,000</div>
+                    <div class="areaname"><h3>Galliard Homes Apartment</h3>
+                    <p>This fabulous Two Bedroom Duplex Apartment Will<br> be close to 
+                        Some Of The best Local Haunts And Venues. </p> </div>
+
+                    <img src="/Images/face2.jpg" height="40px" width="40px" class="faceimg">
+
+                    <div class="tinyimages">
+                           <img src="/Images/icons8-bedroom-50.png" alt="bedroom"  height="30px" width="30px">
+                            <img src="/Images/bathtub1.png" alt="Bathroom" height="30px" width="30px">
+                            <img src="Images/icons8-square-border-50.png" alt="sqrft" height="30px" width="30px">
+                    </div>
+                    <div class="parameters">
+                        <p>2   &nbsp;&nbsp; 1  &nbsp;&nbsp; 1041</p>
+                        
+                    </div>
+
+                    <div class="labels">
+                        <span>Bedrooms Bathrooms SquareFt </span>
+                    </div>
+                    <div class="threeimages">
+                        <a  href="#"><img src="/Images/4way.png" alt="4way" class="img1"></a>
+                        <a  href="#"><img src="/Images/heart.png" alt="heart" class="img2"></a>
+                        <a  href="#"><img src="/Images/plus.jpeg" alt="plus" class="img3"> </a>   
+                    </div>
+                     
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="threedots">
+        <img src="/Images/dots.png" alt="dots" height="40" width="80">
+    </section>
+<!--
+    Section 4- Apartment Plan
+         --->
+
+    <section class="ApartmentPlan">
+        <div>
+        <img src="/Images/Rectangle 113.png" alt="rectangle" class="background" height="800" width="1370"> 
+        <br>
+        <div class="title2">
+            <h1><span class="darkblue"> Apartment Plans</span></h1>
+        </div>
+            <!--Unordered list with UL and LI tags-->
+            <div class="plans">
+            <ul>
+                <li><a href="#">The Studio</a></li>
+                <li><a href="#">Delux Portion</a></li>
+                <li><a href="#">Penthouse</a></li>
+                <li><a href="#">Top Garden</a></li>
+                <li><a href="#">Double Height</a></li>
+        
+            </ul>
+            </div>
+        <div class="whitebg">
+            <img src="/Images/Rectangle 114.png" width="1290" height="600">
+        </div>
+        <div class="planimage">
+            <!-- Delux Portion Code-->
+            <p>
+            <span>Deluxe Portion</span> <br><br>
+            Boasting chic interiors, three private balconies and a remarkable terrace,<br>
+            this two bedroom apartment will epitomise complete luxury. Not only will<br>
+            residents benefit from a superb location in the heart of Shoreditch, but<br>
+            they will also enjoy unrivalled facilities and a 24-hour bespoke concierge.<br><br><br>
+            Total Area &nbsp;&nbsp;&nbsp;&nbsp;………………………………………………………&nbsp;2800 Sq. Ft<br><br><br>
+            Bedroom &nbsp;&nbsp;&nbsp;&nbsp;……………………………………………………….&nbsp;2800 Sq. Ft<br><br><br>
+            Bathroom &nbsp;&nbsp;&nbsp;&nbsp;………………………………………………………&nbsp;2800 Sq. Ft<br><br><br>
+            Smoking/ pets&nbsp;&nbsp;&nbsp;&nbsp;…………………………………………………..&nbsp;2800 Sq. Ft<br><br><br>
+            Lounge&nbsp;&nbsp;&nbsp;&nbsp;…………………………………………………………&nbsp;2800 Sq. Ft</p>
+
+        
+        <img src="/Images/Image 6.png" alt="Apartment Plans" width="500" height="500">
+        </div>
+        </div>
+    
+    </section>
+<!--
+       Section 5-Apartment in the Prime Location
+             --->
+    <section>
+        <div class="buy">
+            <div>
+            <h1>Buy<br>Dream Apartment<br><span>In Prime Location</span></h1>
+            </div>
+            <div>
+                <img src="/Images/Union 2.png" alt="union" class="union" height="170" width="170">
+            </div>
+            <div>
+                <img src="/Images/THE-SELECT-TEN----Bedroom-Apartment---Wintergarden-(Floor-33-34).png" alt="bedroom" class="bedroom" width="900" height="590">
+            </div>
+            <div class="delux">
+                <img src="/Images/delux2.png" alt="delux" height="300" width="400">
+            </div>
+        </div>
+        
+        <div class="play">
+            <img src="/Images/Group 9722.png" alt="play" height="70" width="70"> 
+        </div>
+        <button type="button" name="button" class="btn3">See All Apartment</button>
+    </section>
+<!-- The footer tag contains the details about the company 
+             and methods to connect to the company via variuos social media platforms -->
+
+    <section class="footer">
+        <footer>
+            <!--Atricle tag:-The <article> tag specifies independent, self-contained content.-->
+            <article>
+                <img src="/Images/Group 9739.png" alt="Logo">
+            <ul>
+            <li>The most beautiful exclusive properties</li> 
+            <li>and luxury appartments</li>
+            </ul>
+            <img src="/Images/Group 9740.png" alt="Logo">
+            <img src="/Images/Group 9742.png" alt="Logo">
+            <img src="/Images/Group 9741.png" alt="Logo">
+            <img src="/Images/Group 9743.png" alt="Logo">
+            </article>
+            <article>
+                <!-- Unordered List -->
+                <ul>
+                    <li><h3>Useful Links</h3></li>
+                    <li>About</li>
+                    <li>Partners</li>
+                    <li>Contact</li>
+                </ul>
+            </article>
+            <article>
+                
+                <ul>
+                    <li><h3>Help?</h3></li>
+                    <li>FAQs</li>
+                    <li>Terms and Conditions</li>
+                    <li>Privacy</li>
+                    <li>Policy</li>
+                </ul>
+            </article>
+            <!--Copyringt Part-->
+            <div class="container1">
+                <img src="/Images/Rectangle 128.png" alt="Logo" width="1454" height="90"></div>
+               <div class="copyright"> <p>Copyright © 2021 modern.com</p></div>
+        </footer>
+    </section>
+    </main>
+    </body>
+</html>
